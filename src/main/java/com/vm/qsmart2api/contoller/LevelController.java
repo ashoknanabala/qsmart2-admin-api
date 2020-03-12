@@ -13,7 +13,6 @@ import com.vm.qsmart2api.dtos.floor.FloorCreateDto;
 import com.vm.qsmart2api.dtos.floor.FloorListDto;
 import com.vm.qsmart2api.dtos.floor.FloorUpdateDto;
 import com.vm.qsmart2api.dtos.floor.LevelGetDto;
-import com.vm.qsmart2api.dtos.location.LocationCreateDto;
 import com.vm.qsmart2api.mapper.LevelMapper;
 import com.vm.qsmart2api.repository.LevelRepository;
 import com.vm.qsmart2api.services.LevelService;

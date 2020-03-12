@@ -24,4 +24,19 @@
 //    TblLocation locationDtoToTblLocation(LocationDto locationDto);
 //    
 //    List<LocationDto> toLocationDto(List<TblLocation> locations);
+
+
+
+
+
+
+
+//    
+//    TblLocation locationCrtDtoToTblLocation(LocationCreateDto dto);
+//    
+//   
+//    
+//    LocationGetDto locnDtoToTblLocation(TblLocation loaction);
+//    
+//    List<LocationGetDto> locationBrToLocationTbl(List<TblLocation> location);
 //}

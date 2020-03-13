@@ -1,0 +1,43 @@
+[{
+  "name": "Home",
+  "link": "dashboard",
+  "icon": "ti-dashboard",
+  "submenu": [{
+    "name": "Dashboard",
+    "link": "dashboard"
+  }]
+},
+{
+  "name": "Token Service",
+  "link": "nursetokenservice",
+  "icon": "ti-ticket",
+  "submenu": [{
+    "name": "Token Service",
+    "link": "nursetokenservice"
+  }
+  ]
+},
+{
+  "name": "Reports",
+  "link": "currenttokens",
+  "icon": "ti-files",
+  "submenu": [{
+    "name": "Current Tokens",
+    "link": "currenttokens"
+  },
+  {
+    "name": "Tokens History",
+    "link": "tokenhistory"
+  },
+  {
+    "name": "Current Day Appointments",
+    "link": "currentdayappiontments"
+  },
+  {
+    "name": "Appointments History",
+    "link": "appointmentshistory"
+  }
+  ]
+}
+
+]

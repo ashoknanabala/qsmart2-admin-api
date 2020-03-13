@@ -1,0 +1,25 @@
+[
+{
+  "name": "Admin Manager",
+  "link": "client",
+  "icon": "ti-settings",
+  "submenu": [{
+    "name": "Clients",
+    "link": "client"
+  }]
+},
+{
+  "name": "Users",
+  "link": "users",
+  "icon": "ti-user",
+  "submenu": [{
+    "name": "Users",
+    "link": "users"
+  },
+  {
+    "name": "Privileges",
+    "link": "privileges"
+  }
+  ]
+}
+]

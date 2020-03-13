@@ -5,6 +5,7 @@ import com.vm.qsmart2api.configuration.PropertiesConfiguration;
 import com.vm.qsmart2api.configuration.SwaggerConfiguration;
 import com.vm.qsmart2api.configuration.WebServerConfig;
 import com.vm.qsmart2api.contoller.LevelController;
+import com.vm.qsmart2api.contoller.MenuController;
 import com.vm.qsmart2api.contoller.ServiceController;
 //import com.vm.qsmart2api.contoller.BranchController;
 import com.vm.qsmart2api.contoller.UserController;
@@ -27,9 +28,7 @@ import org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactor
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration;
 
 @Import({
@@ -53,7 +52,8 @@ import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfi
     ServiceController.class,
     ServiceService.class,
     LevelController.class,
-    LevelService.class
+    LevelService.class,
+    MenuController.class
     })
 //@SpringBootApplication
 public class Qsmart2ApiApplication implements CommandLineRunner {

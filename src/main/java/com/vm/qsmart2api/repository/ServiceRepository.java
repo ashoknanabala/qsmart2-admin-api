@@ -7,6 +7,8 @@ package com.vm.qsmart2api.repository;
 
 import com.vm.Qsmart.model.Service;
 import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -30,5 +32,8 @@ public interface ServiceRepository extends JpaRepository<Service, Integer>{
                     + " Left JOIN BuildingInfo b on fd.buildId=b.buildId "
                     + " WHERE s.deptId = :deptId ")
     public List<Object[]> getServicesByDeptId(@Param("deptId")int deptId);
+
+    @Query("SELECT service From Service service")
+    public Page<Service> findAllByPagenation(Pageable pageRequest);
     
 }

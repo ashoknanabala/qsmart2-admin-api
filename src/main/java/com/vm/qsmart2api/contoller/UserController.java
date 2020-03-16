@@ -64,6 +64,7 @@ public class UserController {
            }
        };
        logger.info("<<[{}]:Data:[{}]", "Exit", users);
-       return new UsersGDto(users);
+       //return new UsersGDto(users);
+         return null;
    }
 }

@@ -4,7 +4,7 @@ import com.vm.qsmart2api.configuration.MssqlDataSource;
 import com.vm.qsmart2api.configuration.PropertiesConfiguration;
 import com.vm.qsmart2api.configuration.SwaggerConfiguration;
 import com.vm.qsmart2api.configuration.WebServerConfig;
-import com.vm.qsmart2api.contoller.JwtAuthenticationController;
+import com.vm.qsmart2api.contoller.AuthController;
 import com.vm.qsmart2api.contoller.LevelController;
 import com.vm.qsmart2api.contoller.MenuController;
 import com.vm.qsmart2api.contoller.ServiceController;
@@ -57,7 +57,7 @@ import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfi
     LevelService.class,
     MenuController.class,
     JwtTokenUtil.class,
-    JwtAuthenticationController.class
+    AuthController.class
     })
 //@SpringBootApplication
 public class Qsmart2ApiApplication implements CommandLineRunner {

@@ -27,7 +27,7 @@ public class AuthController {
     @Autowired
     JwtTokenUtil jwtTokenUtil;
 
-    @PostMapping("/login")
+    @PostMapping(path = "/login", produces = {"application/json", "application/xml"})
     public ResponseEntity<LoginResponseDto> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
         LoginResponseDto loginResponse = null;
         final UserDetails userDetails = new UserDetails();

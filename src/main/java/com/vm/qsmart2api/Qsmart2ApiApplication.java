@@ -5,13 +5,16 @@ import com.vm.qsmart2api.configuration.PropertiesConfiguration;
 import com.vm.qsmart2api.configuration.SwaggerConfiguration;
 import com.vm.qsmart2api.configuration.WebServerConfig;
 import com.vm.qsmart2api.contoller.AuthController;
+import com.vm.qsmart2api.contoller.DepartmentController;
 import com.vm.qsmart2api.contoller.LevelController;
-import com.vm.qsmart2api.contoller.MenuController;
+import com.vm.qsmart2api.contoller.RolesController;
 import com.vm.qsmart2api.contoller.ServiceController;
 //import com.vm.qsmart2api.contoller.BranchController;
 import com.vm.qsmart2api.contoller.UserController;
-import com.vm.qsmart2api.security.JwtTokenUtil;
+import com.vm.qsmart2api.contoller.MenuController;
+import com.vm.qsmart2api.services.DepartmentService;
 import com.vm.qsmart2api.services.LevelService;
+import com.vm.qsmart2api.services.RolesService;
 import com.vm.qsmart2api.services.ServiceService;
 //import com.vm.qsmart2api.services.BranchService;
 import com.vm.qsmart2api.utils.DBConstants;
@@ -30,7 +33,9 @@ import org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactor
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration;
 
 @Import({
@@ -55,9 +60,11 @@ import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfi
     ServiceService.class,
     LevelController.class,
     LevelService.class,
-    MenuController.class,
-    JwtTokenUtil.class,
-    AuthController.class
+    DepartmentController.class,
+    DepartmentService.class,
+    RolesController.class,
+    RolesService.class
+    
     })
 //@SpringBootApplication
 public class Qsmart2ApiApplication implements CommandLineRunner {

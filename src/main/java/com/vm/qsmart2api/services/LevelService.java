@@ -101,8 +101,9 @@ public class LevelService {
 //            logger.error("{}Excep:updateLevelStatusinDb:Error:{}", header, ExceptionUtils.getRootCauseMessage(e));
 //            throw new RuntimeException("floor.repo.fail.updateStatusFail");
         }
-
+    
     }
+    
 
     public FloorListDto getFloorsAndServicesByFacilitateId(String header, int facilitateId) {
         List<Object[]> floorsInfoList = new ArrayList<>();
